@@ -17,7 +17,7 @@ import { PassportModule } from '@nestjs/passport';
 
 const ormOption: TypeOrmModuleOptions = {
   type: 'mysql',
-  host: '109.70.148.63',
+  host: 'http://109.70.148.63',
   port: 3306,
   username: 'expertiz_1-90bet-backend',
   database: 'expertiz_1-90bet-backend',
