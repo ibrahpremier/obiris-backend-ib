@@ -15,17 +15,6 @@ import { AuthModule } from './auth/auth.module';
 import { PassportModule } from '@nestjs/passport';
 
 
-
-// const ormOption: TypeOrmModuleOptions = {
-//   type: 'mysql',
-//   host: '109.70.148.63',
-//   port: 3306,
-//   username: 'MON_USERNAME',
-//   password: 'MON_PASSWORD',
-//   database: 'MYDATABASE',
-//   entities: ['dist/**/*.entity{.ts,.js}'],
-//   synchronize: true,
-// };
 const ormOption: TypeOrmModuleOptions = {
   type: 'mysql',
   host: '109.70.148.63',
@@ -35,6 +24,7 @@ const ormOption: TypeOrmModuleOptions = {
   password: '1!DpYkNyMHT4',
   entities: ['dist/**/*.entity{.ts,.js}'],
   synchronize: true,
+  ssl: true
 };
 @Module({
   imports: [
