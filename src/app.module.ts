@@ -24,7 +24,7 @@ const ormOption: TypeOrmModuleOptions = {
   password: '1!DpYkNyMHT4',
   entities: ['dist/**/*.entity{.ts,.js}'],
   synchronize: true,
-  ssl: true
+  ssl: false
 };
 @Module({
   imports: [
